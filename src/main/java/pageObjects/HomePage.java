@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import framework.BasePage;
@@ -17,7 +18,7 @@ private static final Logger log = Logger.getLogger(HomePage.class);
 WebDriver driver;
 	
 	//list of objects on home page
-	/*@FindBy(id="search_query_top")
+	@FindBy(id="search_query_top")
 	private WebElement searchBar;
 	
 	@FindBy(xpath="//form[@id='searchbox']//button[@name='submit_search']")
@@ -27,7 +28,7 @@ WebDriver driver;
 	private List<WebElement> productResultSet;
 	
 	@FindBy(css = ".shop-phone strong")
-	private WebElement shopPhoneNumber;*/
+	private WebElement shopPhoneNumber;
 	
 	
 	//home page constructor
@@ -62,14 +63,14 @@ WebDriver driver;
 
 	}
 	
-	/*private List<String> getProductResultSet(){
+	private List<String> getProductResultSet(){
 		List<String> productNames = new ArrayList<String>();
 		for(WebElement elem:productResultSet) {
 			productNames.add(elem.getText().trim());
 			
 		}
 		return productNames;
-	}*/
+	}
 
 
 }
