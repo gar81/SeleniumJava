@@ -39,7 +39,20 @@ WebDriver driver;
 		log.info("Home page objects are initialized successfully and constructor ends");
 	}
 	
-	//page actions available for use in test	
+	//page actions available for use in test
+	
+public List<String> searchProduct(String productName) {
+		
+		BrowserUtil.write(searchBar,productName);
+		BrowserUtil.click(searchButton);
+		return getProductResultSet();
+			
+	}
+	
+	public String getShopPhoneNumber() {
+		return BrowserUtil.getText(shopPhoneNumber);
+
+	}	
 	
 	public ProductDetailPage productDetails(String productName) {
 		
@@ -51,8 +64,7 @@ WebDriver driver;
 		}
 		return new ProductDetailPage();
 		
-	}
-	
+	}	
 	
 	//private actions to be used in page classes only
 	private void launchApp(String url) {

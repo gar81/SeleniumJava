@@ -21,7 +21,7 @@ public class ExcelUtil {
 	Workbook wb=null;           //initialize Workbook null  
 	try{  
 		//reading data from a file in the form of bytes  
-		FileInputStream fis=new FileInputStream(filePath);  
+		FileInputStream fis=new FileInputStream(("user.dir")+"/src/test/java/resources/file_example_XLSX_10.xlsx");  
 		//constructs an XSSFWorkbook object, by buffering the whole stream into the memory  
 		wb=new XSSFWorkbook(fis);  
 	}  
@@ -53,8 +53,7 @@ public class ExcelUtil {
 			e1.printStackTrace();  
 		} 
 		
-		List<HashMap<String,String>> dataMap = new ArrayList<HashMap<String,String>>();
-		
+		List<HashMap<String,String>> dataMap = new ArrayList<HashMap<String,String>>();		
 		
 		List<String> headerList = new ArrayList<String>();
 		
@@ -70,8 +69,7 @@ public class ExcelUtil {
 			HashMap<String,String> dataRow = new HashMap<String,String>();
 			if(myrow.getRowNum()>0) {
 			    for (int i=0;i<myrow.getPhysicalNumberOfCells();i++) {
-			    	dataRow.put(headerList.get(i), myrow.getCell(i).getStringCellValue());
-			        
+			    	dataRow.put(headerList.get(i), myrow.getCell(i).getStringCellValue());			        
 			    }
 			    dataMap.add(dataRow);
 			}

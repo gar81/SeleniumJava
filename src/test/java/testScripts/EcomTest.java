@@ -31,12 +31,11 @@ public class EcomTest extends BaseTest{
 		
 		switch (testName) {
 		case "test1":
-			dataMap = ExcelUtil.loadDataIntoMap("/Users/testdatapertest1.xlsx", testName);
+			dataMap = ExcelUtil.loadDataIntoMap(("user.dir")+"/src/test/java/resources/testdatapertest1.xlsx", testName);
 			break;
 
 		case "test2":
-			dataMap = ExcelUtil.loadDataIntoMap("/Users/testdatapertest2.xlsx", testName);
-			
+			dataMap = ExcelUtil.loadDataIntoMap(("user.dir")+"/src/test/java/resources/testdatapertest2.xlsx", testName);			
 			break;
 			
 		default:
@@ -60,10 +59,8 @@ public class EcomTest extends BaseTest{
 			assertTrue(str.contains(data.get("SearchString")),"Actual Value: " + str);
 		}
 		
-		System.out.println("one");
-		
-	}
-	
+		System.out.println("one");		
+	}	
 	
 	@Test(dataProvider = "DP")
 	public void test2(HashMap<String, String> data) {
