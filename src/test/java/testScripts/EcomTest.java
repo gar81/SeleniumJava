@@ -1,8 +1,7 @@
 package testScripts;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
+import org.testng.annotations.Test;
+import org.testng.Assert;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,7 +11,6 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 import framework.BaseTest;
 import framework.ExcelUtil;
@@ -31,11 +29,11 @@ public class EcomTest extends BaseTest{
 		
 		switch (testName) {
 		case "test1":
-			dataMap = ExcelUtil.loadDataIntoMap(("user.dir")+"/src/test/java/resources/testdatapertest1.xlsx", testName);
+			dataMap = ExcelUtil.loadDataIntoMap(System.getProperty("user.dir")+"/src/test/java/resources/testdatapertest1.xlsx", testName);
 			break;
 
 		case "test2":
-			dataMap = ExcelUtil.loadDataIntoMap(("user.dir")+"/src/test/java/resources/testdatapertest2.xlsx", testName);			
+			dataMap = ExcelUtil.loadDataIntoMap(System.getProperty("user.dir")+"/src/test/java/resources/testdatapertest2.xlsx", testName);			
 			break;
 			
 		default:
@@ -53,10 +51,10 @@ public class EcomTest extends BaseTest{
 	@Test(dataProvider = "DP")
 	public void test1(HashMap<String, String> data) {
 		System.out.println(data);
-		hp = new HomePage(driver);
+		hp = new HomePage(driver); //sending driver to homepage
 		List<String> searchResults = hp.searchProduct(data.get("SearchString"));
 		for(String str:searchResults) {
-			assertTrue(str.contains(data.get("SearchString")),"Actual Value: " + str);
+			Assert.assertTrue(str.contains(data.get("SearchString")), "Actual Value: " + str);
 		}
 		
 		System.out.println("one");		
@@ -64,12 +62,10 @@ public class EcomTest extends BaseTest{
 	
 	@Test(dataProvider = "DP")
 	public void test2(HashMap<String, String> data) {
-		assertEquals(data.get("Phone"), hp.getShopPhoneNumber());
+		Assert.assertEquals(data.get("Phone"), hp.getShopPhoneNumber());
 		
 		System.out.println(data);
 		System.out.println("two");
 		
 	}
-	
-
 }

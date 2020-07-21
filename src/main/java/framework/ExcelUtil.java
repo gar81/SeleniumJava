@@ -1,4 +1,3 @@
-
 package framework;
 
 import java.io.FileInputStream;
@@ -38,7 +37,8 @@ public class ExcelUtil {
 	value=cell.getStringCellValue();    //getting cell value  
 	return value;               //returns the cell value  
 }  
-	public static List<HashMap<String, String>> loadDataIntoMap(String filePath, String methodName) { 
+	
+	public static List<HashMap<String, String>> loadDataIntoMap(String filePath, String methodName) { // for multiple Excel sheets
 		Workbook wb=null;           //initialize Workbook null  
 		try{  
 			//reading data from a file in the form of bytes  
@@ -78,5 +78,7 @@ public class ExcelUtil {
 		
 		return dataMap;
 	}
-
-}
+	
+	public static List<HashMap <String, String>> loadDataIntoMap(String filePath) { //for only one Excel sheet 
+		return loadDataIntoMap(filePath, null);
+}}

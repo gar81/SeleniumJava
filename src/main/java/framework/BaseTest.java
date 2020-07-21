@@ -53,6 +53,7 @@ public class BaseTest {
 		try {
 			switch (browser) {
 			case "chrome":
+				System.setProperty("webdriver.chrome.driver", "D:\\chromedriver\\chromedriver.exe");
 				driver = new ChromeDriver();
 				break;
 			case "firefox":

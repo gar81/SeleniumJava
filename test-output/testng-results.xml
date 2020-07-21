@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-08T12:53:54 EDT" name="Default suite" finished-at="2020-07-08T12:53:54 EDT" duration-ms="801">
+  <suite started-at="2020-07-21T10:42:19 EDT" name="Default suite" finished-at="2020-07-21T10:42:20 EDT" duration-ms="812">
     <groups>
     </groups>
-    <test started-at="2020-07-08T12:53:54 EDT" name="Default test" finished-at="2020-07-08T12:53:54 EDT" duration-ms="801">
+    <test started-at="2020-07-21T10:42:19 EDT" name="Default test" finished-at="2020-07-21T10:42:20 EDT" duration-ms="812">
       <class name="testScripts.EcomTest">
-        <test-method is-config="true" signature="beforeSuiteSetup()[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-08T12:53:54 EDT" name="beforeSuiteSetup" finished-at="2020-07-08T12:53:54 EDT" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="beforeSuiteSetup()[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-21T10:42:19 EDT" name="beforeSuiteSetup" finished-at="2020-07-21T10:42:19 EDT" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuiteSetup -->
-        <test-method is-config="true" signature="beforeTestRun(java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-08T12:53:54 EDT" name="beforeTestRun" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1594227234117" status="FAIL">
+        <test-method is-config="true" signature="beforeTestRun(java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-21T10:42:19 EDT" name="beforeTestRun" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1595342539581" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeTest on method beforeTestRun but has not been marked @Optional or defined
-in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse--340338811\testng-customsuite.xml]]>
+in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse-796764336\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeTest on method beforeTestRun but has not been marked @Optional or defined
-in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse--340338811\testng-customsuite.xml
+in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse-796764336\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:272)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
 at org.testng.internal.Parameters.createParameters(Parameters.java:704)
@@ -49,17 +49,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestRun -->
-        <test-method signature="test1(java.util.HashMap)[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-08T12:53:54 EDT" name="test1" data-provider="DP" finished-at="2020-07-08T12:53:54 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="test1(java.util.HashMap)[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-21T10:42:20 EDT" name="test1" data-provider="DP" finished-at="2020-07-21T10:42:20 EDT" duration-ms="1" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeTest on method beforeTestRun but has not been marked @Optional or defined
-in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse--340338811\testng-customsuite.xml]]>
+in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse-796764336\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeTest on method beforeTestRun but has not been marked @Optional or defined
-in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse--340338811\testng-customsuite.xml
+in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse-796764336\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:272)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
 at org.testng.internal.Parameters.createParameters(Parameters.java:704)
@@ -87,17 +87,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="test1(java.util.HashMap)[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-08T12:53:54 EDT" name="test1" data-provider="DP" finished-at="2020-07-08T12:53:54 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="test1(java.util.HashMap)[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-21T10:42:20 EDT" name="test1" data-provider="DP" finished-at="2020-07-21T10:42:20 EDT" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeTest on method beforeTestRun but has not been marked @Optional or defined
-in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse--340338811\testng-customsuite.xml]]>
+in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse-796764336\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeTest on method beforeTestRun but has not been marked @Optional or defined
-in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse--340338811\testng-customsuite.xml
+in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse-796764336\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:272)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
 at org.testng.internal.Parameters.createParameters(Parameters.java:704)
@@ -125,17 +125,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="test2(java.util.HashMap)[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-08T12:53:54 EDT" name="test2" data-provider="DP" finished-at="2020-07-08T12:53:54 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="test2(java.util.HashMap)[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-21T10:42:20 EDT" name="test2" data-provider="DP" finished-at="2020-07-21T10:42:20 EDT" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeTest on method beforeTestRun but has not been marked @Optional or defined
-in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse--340338811\testng-customsuite.xml]]>
+in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse-796764336\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeTest on method beforeTestRun but has not been marked @Optional or defined
-in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse--340338811\testng-customsuite.xml
+in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse-796764336\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:272)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
 at org.testng.internal.Parameters.createParameters(Parameters.java:704)
@@ -163,17 +163,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method signature="test2(java.util.HashMap)[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-08T12:53:54 EDT" name="test2" data-provider="DP" finished-at="2020-07-08T12:53:54 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="test2(java.util.HashMap)[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-21T10:42:20 EDT" name="test2" data-provider="DP" finished-at="2020-07-21T10:42:20 EDT" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeTest on method beforeTestRun but has not been marked @Optional or defined
-in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse--340338811\testng-customsuite.xml]]>
+in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse-796764336\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeTest on method beforeTestRun but has not been marked @Optional or defined
-in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse--340338811\testng-customsuite.xml
+in C:\Users\Garima Gulati\AppData\Local\Temp\testng-eclipse-796764336\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:272)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
 at org.testng.internal.Parameters.createParameters(Parameters.java:704)
@@ -201,11 +201,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="AfterTestRun()[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-08T12:53:54 EDT" name="AfterTestRun" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1594227234913" status="SKIP">
+        <test-method is-config="true" signature="AfterTestRun()[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-21T10:42:20 EDT" name="AfterTestRun" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1595342540385" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTestRun -->
-        <test-method is-config="true" signature="AfterSuiteTeardown()[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-08T12:53:54 EDT" name="AfterSuiteTeardown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1594227234978" status="SKIP">
+        <test-method is-config="true" signature="AfterSuiteTeardown()[pri:0, instance:testScripts.EcomTest@778d1062]" started-at="2020-07-21T10:42:20 EDT" name="AfterSuiteTeardown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1595342540482" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuiteTeardown -->

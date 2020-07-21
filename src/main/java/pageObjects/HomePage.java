@@ -15,8 +15,7 @@ import framework.BrowserUtil;
 public class HomePage extends BasePage {
 	
 private static final Logger log = Logger.getLogger(HomePage.class);
-WebDriver driver;
-	
+WebDriver driver;	
 	//list of objects on home page
 	@FindBy(id="search_query_top")
 	private WebElement searchBar;
@@ -34,7 +33,7 @@ WebDriver driver;
 	//home page constructor
 	public HomePage(WebDriver driver) {
 		super(driver);
-		launchApp(appURL);
+		launchApp(appURL); //driver.get(url)
 		log.info("Home page constructor is invoked");
 		log.info("Home page objects are initialized successfully and constructor ends");
 	}
