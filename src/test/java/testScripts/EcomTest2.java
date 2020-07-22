@@ -21,7 +21,6 @@
 //	@DataProvider(name = "TD_Ecom")
 //	public static Iterator<Object[]> TestData_Test_Ecom() {
 //		return null;
-//
 //	}
 //
 //	private HashMap<String, String> data;
@@ -49,9 +48,7 @@
 //	}
 //
 //	@Test(dependsOnMethods = { "verifyMouseOverParticularDressShowsQuickView" })
-//	public void verifyProductConfigurationAndAddingToCart() {
-//
-//
+//	public void verifyProductConfigurationAndAddingToCart() {//
 //	}
 //
 //	@Test(dependsOnMethods = { "verifyProductConfigurationAndAddingToCart" })

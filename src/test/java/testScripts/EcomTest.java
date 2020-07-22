@@ -19,7 +19,7 @@ import pageObjects.HomePage;
 public class EcomTest extends BaseTest{
 	
 	public HomePage hp;
-	WebDriver driver;
+	//WebDriver driver;
 		
 	@DataProvider(name="DP")
 	public Iterator<Object[]> getTestData(Method method) {
@@ -62,8 +62,7 @@ public class EcomTest extends BaseTest{
 	
 	@Test(dataProvider = "DP")
 	public void test2(HashMap<String, String> data) {
-		Assert.assertEquals(data.get("Phone"), hp.getShopPhoneNumber());
-		
+		Assert.assertEquals(data.get("Phone"), hp.getShopPhoneNumber());		
 		System.out.println(data);
 		System.out.println("two");
 		

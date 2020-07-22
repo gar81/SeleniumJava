@@ -18,8 +18,8 @@ public class BaseTest {
 	
 	private static final Logger log = Logger.getLogger(BaseTest.class);
 	
-	WebDriver driver;
-	WebDriverWait wait;
+	public WebDriver driver;
+	public WebDriverWait wait;
 
 	@BeforeSuite
 	public void beforeSuiteSetup() {
@@ -30,9 +30,9 @@ public class BaseTest {
 	public void AfterSuiteTeardown() {
 	}
 	
-	@Parameters({ "browser", "grid", "implicitWait", "explicitWait", "secretKey" })
+	@Parameters({ "browser", "implicitWait", "explicitWait", "secretKey" })
 	@BeforeTest		
-	public void beforeTestRun(String browser, String grid, int implicitWait, int explicitWait, String secretKey) {
+	public void beforeTestRun(String browser, int implicitWait, int explicitWait, String secretKey) {
 		this.secretKey = secretKey;
 		log.info("************TestCase Execution starts*****************");
 		initWebDriver(browser);
@@ -79,6 +79,6 @@ public class BaseTest {
 	}
 
 	private void closeWebDriver() {
-		driver.quit();
+		//driver.quit();
 	}
 }

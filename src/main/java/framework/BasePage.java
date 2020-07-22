@@ -14,8 +14,8 @@ public class BasePage {
 
 	private static final Logger log = Logger.getLogger(BasePage.class);
 
-	WebDriver driver;
-	WebDriverWait wait;
+	public WebDriver driver;
+	public WebDriverWait wait;
 	
 	public String appURL;
 	public Properties prop = new Properties();
@@ -52,6 +52,5 @@ public class BasePage {
 	}
 	
 	//App page or home page...as the user of the application, you will search something from home page
-		//menu page
-		
+		//menu page		
 }
